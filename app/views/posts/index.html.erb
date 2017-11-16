@@ -1,0 +1,8 @@
+<h1>Insta List</h1>
+
+<% @posts.each do |post|%>
+<img src="<%=post.img_url%>">
+<%= link_to("#{post.id} 번째 글", post_path(post.id))%><br>
+<%end%>
+
+<%= link_to("Write Story",new_post_path) %>

@@ -1,0 +1,7 @@
+<h1>Story</h1>
+
+<!--<%#= @post.img_url %><br>-->
+<img src="<%=@post.img_url%>"><br>
+<%= @post.story %><br>
+<%= link_to("Edit", edit_post_path(@post.id))%>
+<%= link_to("Delete", post_path(@post.id), method:"delete")%>
